@@ -1,0 +1,135 @@
+body{
+    margin: 0;
+    font-family:  'Inter', sans-serif;
+    background-color: rgb(58, 53, 54);
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+ 
+}
+ 
+/* navbar starts */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #992e4c;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.nav__header {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #992e4c;;
+  }
+  
+ 
+  .nav__logo a {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 38px;
+    width: 38px;
+    margin-right: 10px;
+    border-radius: 50%; /* optional: make it circular */
+    object-fit: cover;
+}
+
+  
+  .nav__menu__btn {
+    font-size: 2rem;
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  .nav__links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateY(-100%);
+  }
+  
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-left, .nav-right {
+    font-size:25px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.main-content {
+    text-align: center;
+    padding: 10px;
+    flex: 1; 
+}
+
+/* navbar end */
+
+
+/* footer starts */
+.site-footer {
+    background-color: #992e4c;
+    color: white;
+    padding: 20px 40px;
+    text-align: center;
+    margin-top: 60px;
+    border-top: 3px solid  #5f2032;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-links a {
+    color: #caf0f8;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* footer end */
+
+
+/* predict.html page  */
+/* Body styling */ 
+/* 
