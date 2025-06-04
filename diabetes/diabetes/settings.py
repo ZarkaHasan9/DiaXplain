@@ -28,7 +28,7 @@ SECRET_KEY = 'django-insecure-kc5386_etb(&eyln@%89gr6v^ik_a#wmy)*d9zkjy&xdb58*wk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['diaxplain.onrender.com']
 
 
 # Application definition
