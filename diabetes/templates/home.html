@@ -1,21 +1,105 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Diabetes Prediction</title>
-</head>
-<body>
-    <h2>Enter Details for Prediction</h2>
-    <form method="post">
-        {% csrf_token %}
-        <label>Pregnancies:</label><input type="number" name="pregnancies" required><br>
-        <label>Glucose:</label><input type="number" name="glucose" required><br>
-        <label>Blood Pressure:</label><input type="number" name="blood_pressure" required><br>
-        <label>Skin Thickness:</label><input type="number" name="skin_thickness" required><br>
-        <label>Insulin:</label><input type="number" name="insulin" required><br>
-        <label>BMI:</label><input type="number" step="0.1" name="bmi" required><br>
-        <label>Diabetes Pedigree Function:</label><input type="number" step="0.01" name="diabetes_pedigree" required><br>
-        <label>Age:</label><input type="number" name="age" required><br>
-        <button type="submit">Predict</button>
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<style>
+    /* Background image section */
+    body {
+        background-image: url("{% static 'images/main1.jpg' %}");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main-content {
+        text-align: center;
+        padding: 90px 20px;
+        color: rgb(72, 32, 32);
+        font-family: 'Inter', sans-serif;
+    }
+
+    .main-content h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+    
+    }
+
+    .intro-text p {
+        font-size: 1.2rem;
+        margin: 10px 0;
+    }
+
+    .main-content form input[type="submit"] {
+        background-color: #898184;
+        color: #fff;
+        border: none;
+        padding: 10px 24px;
+        font-size: 1rem;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+    }
+
+    .main-content form input[type="submit"]:hover {
+        background-color: #c88d9e;
+    }
+
+    /* Lifestyle Guidelines Section */
+    .lifestyle-section {
+        background-color: #e5c9c9; /* Light cream color */
+        padding: 60px 20px;
+        font-family: 'Inter', sans-serif;
+        text-align: center;
+        color: #333;
+    }
+
+    .lifestyle-section h2 {
+        font-size: 45px;
+        margin-bottom: 20px;
+        color: #992e4c;
+    }
+
+    .lifestyle-section ul {
+        list-style-type: disc;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .lifestyle-section ul li {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+</style>
+
+<div class="main-content">
+    <h1>WELCOME TO DIABETES PREDICTION SYSTEM</h1>
+    <div class="intro-text">
+        <p>Take control of your health with our Diabetes Risk Prediction tool.</p>
+        <p>Understand your risk factors and make informed lifestyle choices.</p>
+        <p>Get instant risk analysis by entering a few key health details.</p>
+    </div>
+    <form action="predict">
+        <input type="submit" value="Let's get started">
     </form>
-</body>
-</html>
+</div>
+
+<div class="lifestyle-section">
+    <h2>Healthy Lifestyle Guidelines for Diabetes</h2>
+    <ul>
+        <li>Maintain a balanced diet rich in fiber, vegetables, and whole grains.</li>
+        <li>Engage in regular physical activity, at least 30 minutes a day.</li>
+        <li>Monitor blood sugar levels regularly as advised by your doctor.</li>
+        <li>Stay hydrated and avoid sugary beverages.</li>
+        <li>Get adequate sleep and manage stress through meditation or hobbies.</li>
+        <li>Avoid smoking and limit alcohol intake.</li>
+        <li>Schedule regular check-ups to monitor and manage your condition.</li>
+    </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<style>
+    body {
+        background-color: #f0f0f0;
+        margin: 0;
+    }
+    .about-section {
+        padding: 40px 20px 60px 20px;   
+        max-width: 900px;
+        margin: 0 auto;
+        font-family: 'Inter', sans-serif;
+    }
+
+    .about-section h2 {
+        color: #992e4c;
+        font-size: 35px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-section p {
+        color: #444;
+        font-size: 18px;
+        line-height: 1.6;
+        margin-bottom: 20px;
+        text-align: justify;
+    }
+
+    .feedback-form {
+        background-color: #f8f4f5;
+        padding: 10px 40px 10px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .feedback-form h3 {
+        color: #5e3a42;
+        font-size: 25px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .feedback-form form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .feedback-form input,
+    .feedback-form textarea {
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+
+    .feedback-form input[type="submit"] {
+        background-color: #992e4c;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .feedback-form input[type="submit"]:hover {
+        background-color: #b95471;
+    }
+</style>
+
+<div class="about-section">
+    <h2>About DiaXplain</h2>
+    <p>
+        DiaXplain is an intelligent, user-friendly platform designed to help you assess and understand your risk of diabetes.
+        Powered by machine learning, diaXplain not only provides early risk prediction but also offers clear, interpretable
+        insights and lifestyle guidance to support better health decisions. Our goal is to make preventive health accessible,
+        explainable, and personalized for every individual.
+    </p>
+
+    <!-- Feedback Form -->
+    <div class="feedback-form">
+        <h3>We value your feedback!</h3>
+        <form method="post" action="{% url 'submit_feedback' %}">
+            {% csrf_token %}
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" rows="4" placeholder="Your feedback or suggestions..." required></textarea>
+            <input type="submit" value="Submit Feedback">
+        </form>
+    </div>
+</div>
+{% endblock %}
