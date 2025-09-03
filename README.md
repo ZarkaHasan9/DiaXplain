@@ -6,13 +6,13 @@ Repository Structure
 
 •	diabetes/ – Main Django project folder
 
-   o	diabetes/ – Core Django app with settings and configurations
+  &emsp; o	diabetes/ – Core Django app with settings and configurations
  
-   o	home/ – App handling prediction logic, views, and URLs
+  &emsp; o	home/ – App handling prediction logic, views, and URLs
  
-   o	static/ – Static files, styles, images, and saved ML artifacts
+  &emsp; o	static/ – Static files, styles, images, and saved ML artifacts
  
-   o	templates/ – HTML templates for frontend pages
+  &emsp; o	templates/ – HTML templates for frontend pages
 
 •	db.sqlite3 – Local SQLite database storing users and feedback
 
@@ -45,13 +45,15 @@ ________________________________________
 
 System Overview
 
-•	Methodology: Preprocessing, SMOTE balancing, outlier handling, and model comparison
+•	Methodology– Data preprocessing, outlier treatment, SMOTE class balancing, and comparative evaluation of multiple models
 
-•	Explainability Index: LIME-based feature influence reports
+•	Explainability – LIME-based feature influence reports for transparent predictions
 
-•	Performance Summaries: Accuracy, Precision, Recall, and F1-Score across tested models
+•	Performance Summaries- Accuracy, Precision, Recall, and F1-Score across tested models
 
-•	FAQs and Usage Instructions
+•  Data Source – Pima Indians Diabetes Dataset (augmented with preprocessing and balancing; limited to women, hence not fully generalizable)
+
+•  Deployment – Django-based web application with user authentication, prediction form, and feedback system
 ________________________________________
 
 Current Performance
@@ -68,13 +70,13 @@ Last updated: June 3rd, 2025
 
 •	Best Scores:
 
-  o	Accuracy: 81%
+&emsp;  o	Accuracy: 81%
 
-  o	Precision: 75.6%
+&emsp;  o	Precision: 75.6%
 
-  o	Recall: 92.0%
+ &emsp; o	Recall: 92.0%
 
-  o	F1-Score: 83.0%
+ &emsp; o	F1-Score: 83.0%
 ________________________________________
 
 Features of This Repository
@@ -89,13 +91,13 @@ Features of This Repository
 
 •	Django web app with:
 
-  o	User signup/login/logout functionality
+ &emsp; o	User signup/login/logout functionality
 
-  o	Diabetes prediction form
+ &emsp; o	Diabetes prediction form
 
-  o	Explainability option for feature-level insights
+ &emsp; o	Explainability option for feature-level insights
 
-  o	Feedback submission system
+ &emsp; o	Feedback submission system
 ________________________________________
 
 Tech Stack
@@ -142,11 +144,11 @@ Follow Along
 
 •	Planned enhancements:
 
-  o	SHAP integration for global interpretability
+ &emsp; o	SHAP integration for global interpretability
 
-  o	Cloud deployment for broader access
+&emsp;  o	Cloud deployment for broader access
 
-  o	Natural language explanations using LLMs
+&emsp;  o	Natural language explanations using LLMs
 ________________________________________
 
 Why This Matters
