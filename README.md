@@ -8,7 +8,7 @@ ________________________________________
 &emsp;&emsp;&emsp;&emsp; o	diabetes/ – Core Django app with settings and configurations  
 &emsp;&emsp;&emsp;&emsp; o	home/ – App handling prediction logic, views, and URLs  
 &emsp;&emsp;&emsp;&emsp; o	static/ – Static files, styles, images, and saved ML artifacts  
-&emsp;&emsp;&emsp;&emsp; o	templates/ – HTML templates for frontend pages
+&emsp;&emsp;&emsp;&emsp; o	templates/ – HTML templates for frontend pages  
 &emsp;&emsp;•	db.sqlite3 – Local SQLite database storing users and feedback  
 &emsp;&emsp;•	diabetes.csv – Processed dataset used for training and evaluation  
 &emsp;&emsp;•	main1.ipynb – Jupyter notebook for model training, testing, and analysis   
@@ -32,10 +32,10 @@ ________________________________________
 
 ## System Overview
 
-&emsp;&emsp;•	Methodology– Data preprocessing, outlier treatment, SMOTE class balancing, and comparative evaluation of multiple models  
+&emsp;&emsp;•	Methodology– Data preprocessing, outlier, SMOTE class balancing, and evaluation of multiple models  
 &emsp;&emsp;•	Explainability – LIME-based feature influence reports for transparent predictions  
 &emsp;&emsp;•	Performance Summaries- Accuracy, Precision, Recall, and F1-Score across tested models  
-&emsp;&emsp;•  Data Source – Pima Indians Diabetes Dataset (augmented with preprocessing and balancing; limited to women)  
+&emsp;&emsp;•  Data Source – Pima Indians Diabetes Dataset (preprocessing and balancing; limited to women)  
 &emsp;&emsp;•  Deployment – Django-based web application with user authentication, prediction form, and feedback system
 ________________________________________
 
@@ -43,7 +43,7 @@ ________________________________________
 
 Last updated: June 3rd, 2025  
 &emsp;&emsp;•	Dataset: Pima Indians Diabetes Dataset (768 samples, 9 features)  
-&emsp;&emsp;•	Preprocessing: Missing value imputation, outlier handling (IQR/Z-score), class balancing (SMOTE), scaling (StandardScaler)  
+&emsp;&emsp;•	Preprocessing: Missing value imputation, outlier handling (IQR/Z-score), class balancing, scaling 
 &emsp;&emsp;•	Models Tested: Logistic Regression, Random Forest, SVM, Gradient Boosting, XGBoost, LightGBM, etc.  
 &emsp;&emsp;•	Selected Model: Extra Trees Classifier  
 &emsp;&emsp;•	Best Scores:  
