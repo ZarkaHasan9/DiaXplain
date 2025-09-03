@@ -1,18 +1,18 @@
-DiaXplain – Explainable AI for Diabetes Risk Prediction
+# DiaXplain – Explainable AI for Diabetes Risk Prediction
 
 DiaXplain is an explainable AI system designed to predict diabetes risk and provide transparent insights into the contributing health factors. It combines machine learning with interpretability methods to support both patients and healthcare practitioners in understanding the "why" behind each prediction.
 ________________________________________
-Repository Structure
+## Repository Structure
 
 •	diabetes/ – Main Django project folder
 
-  &emsp; o	diabetes/ – Core Django app with settings and configurations
+  &emsp;&emsp; o	diabetes/ – Core Django app with settings and configurations
  
-  &emsp; o	home/ – App handling prediction logic, views, and URLs
+  &emsp;&emsp; o	home/ – App handling prediction logic, views, and URLs
  
-  &emsp; o	static/ – Static files, styles, images, and saved ML artifacts
+  &emsp;&emsp; o	static/ – Static files, styles, images, and saved ML artifacts
  
-  &emsp; o	templates/ – HTML templates for frontend pages
+  &emsp;&emsp; o	templates/ – HTML templates for frontend pages
 
 •	db.sqlite3 – Local SQLite database storing users and feedback
 
@@ -26,7 +26,7 @@ Repository Structure
 
 ____________________________________________________________________________________
 
-The Concept
+## The Concept
 
 Machine learning in healthcare often suffers from being a "black box," limiting trust and adoption. DiaXplain addresses this by combining predictive performance with interpretability.
 
@@ -43,7 +43,7 @@ DiaXplain predicts diabetes risk probability and provides:
 •	Personalized reasoning via LIME-based interpretability
 ________________________________________
 
-System Overview
+## System Overview
 
 •	Methodology– Data preprocessing, outlier treatment, SMOTE class balancing, and comparative evaluation of multiple models
 
@@ -56,7 +56,7 @@ System Overview
 •  Deployment – Django-based web application with user authentication, prediction form, and feedback system
 ________________________________________
 
-Current Performance
+## Current Performance
 
 Last updated: June 3rd, 2025
 
@@ -70,16 +70,16 @@ Last updated: June 3rd, 2025
 
 •	Best Scores:
 
-&emsp;  o	Accuracy: 81%
+&emsp;&emsp;  o	Accuracy: 81%
 
-&emsp;  o	Precision: 75.6%
+&emsp;&emsp;  o	Precision: 75.6%
 
- &emsp; o	Recall: 92.0%
+ &emsp;&emsp; o	Recall: 92.0%
 
- &emsp; o	F1-Score: 83.0%
+ &emsp;&emsp; o	F1-Score: 83.0%
 ________________________________________
 
-Features of This Repository
+## Features of This Repository
 
 •	Data preprocessing pipeline (handling missing values, outliers, and imbalance)
 
@@ -91,18 +91,18 @@ Features of This Repository
 
 •	Django web app with:
 
- &emsp; o	User signup/login/logout functionality
+&emsp;&emsp; o	User signup/login/logout functionality
 
- &emsp; o	Diabetes prediction form
+&emsp;&emsp; o	Diabetes prediction form
 
- &emsp; o	Explainability option for feature-level insights
+ &emsp;&emsp; o	Explainability option for feature-level insights
 
- &emsp; o	Feedback submission system
+ &emsp;&emsp; o	Feedback submission system
 ________________________________________
 
-Tech Stack
+## Tech Stack
 
-Core Technologies
+### Core Technologies
 
 •	Python (pandas, numpy, scikit-learn, imbalanced-learn)
 
@@ -112,7 +112,7 @@ Core Technologies
 
 •	Matplotlib / Seaborn (visualizations)
 
-Key Features
+### Key Features
 
 •	Robust preprocessing and resampling (SMOTE)
 
@@ -125,7 +125,7 @@ Key Features
 •	Full-stack web deployment with Django
 ________________________________________
 
-System Requirements
+## System Requirements
 
 •	Python 3.10+
 
@@ -136,28 +136,26 @@ System Requirements
 •	~50MB storage for datasets and saved models
 ________________________________________
 
-Follow Along
+## Follow Along
 
 •	Development started: April 2025
 
-•	Best model integrated: September 2025
-
 •	Planned enhancements:
 
- &emsp; o	SHAP integration for global interpretability
+&emsp;&emsp; o	SHAP integration for global interpretability
 
-&emsp;  o	Cloud deployment for broader access
+&emsp;&emsp;  o	Cloud deployment for broader access
 
-&emsp;  o	Natural language explanations using LLMs
+&emsp;&emsp;  o	Natural language explanations using LLMs
 ________________________________________
 
-Why This Matters
+## Why This Matters
 
 AI in healthcare cannot remain a black box. Trustworthy systems must provide both predictions and explanations that clinicians and patients can interpret. DiaXplain focuses on transparency, accountability, and practical decision support in diabetes risk prediction.
 ________________________________________
 
-Contact
+## Contact
 
-For inquiries, suggestions, or collaboration:
+#### For inquiries, suggestions, or collaboration:
 
 Email: zarkahasan9@gmail.com
