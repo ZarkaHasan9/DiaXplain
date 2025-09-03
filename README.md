@@ -43,7 +43,7 @@ ________________________________________
 
 Last updated: June 3rd, 2025  
 &emsp;&emsp;•	Dataset: Pima Indians Diabetes Dataset (768 samples, 9 features)  
-&emsp;&emsp;•	Preprocessing: Missing value imputation, outlier handling (IQR/Z-score), class balancing, scaling 
+&emsp;&emsp;•	Preprocessing: Missing value imputation, outlier handling (IQR/Z-score), class balancing, scaling.  
 &emsp;&emsp;•	Models Tested: Logistic Regression, Random Forest, SVM, Gradient Boosting, XGBoost, LightGBM, etc.  
 &emsp;&emsp;•	Selected Model: Extra Trees Classifier  
 &emsp;&emsp;•	Best Scores:  
@@ -51,19 +51,6 @@ Last updated: June 3rd, 2025
 &emsp;&emsp;&emsp;&emsp; o	Precision: 75.6%  
 &emsp;&emsp;&emsp;&emsp; o	Recall: 92.0%  
 &emsp;&emsp;&emsp;&emsp; o	F1-Score: 83.0%
-________________________________________
-
-## Features of This Repository
-
-&emsp;&emsp;•	Data preprocessing pipeline (handling missing values, outliers, and imbalance)  
-&emsp;&emsp;•	Comparison of multiple machine learning models with evaluation metrics  
-&emsp;&emsp;•	Best model (Extra Trees) saved for deployment  
-&emsp;&emsp;•	Explainable predictions using LIME for local interpretability  
-&emsp;&emsp;•	Django web app with:  
-&emsp;&emsp;&emsp;&emsp; o	User signup/login/logout functionality  
-&emsp;&emsp;&emsp;&emsp; o	Diabetes prediction form  
-&emsp;&emsp;&emsp;&emsp; o	Explainability option for feature-level insights  
-&emsp;&emsp;&emsp;&emsp; o	Feedback submission system
 ________________________________________
 
 ## Tech Stack
