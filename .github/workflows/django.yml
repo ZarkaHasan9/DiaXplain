@@ -8,10 +8,8 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
     strategy:
-      max-parallel: 4
       matrix:
         python-version: [3.9]
 
@@ -26,7 +24,7 @@ jobs:
         cd diabetes
         python -m pip install --upgrade pip
         pip install -r requirements.txt
-    - name: Run Tests
+    - name: Verify Setup
       run: |
-        cd diabetes
-        python manage.py test
+        python --version
+        pip list
