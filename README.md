@@ -1,5 +1,8 @@
 # DiaXplain – Explainable AI for Diabetes Risk Prediction
+
   
+DiaXplain is an explainable AI system designed to predict diabetes risk and provide transparent insights into the contributing health factors. It combines machine learning with interpretability methods to support both patients and healthcare practitioners in understanding the "why" behind each prediction.
+
 ## Concept
 Machine learning in healthcare often suffers from being a "black box," limiting trust and adoption.  
 DiaXplain addresses this by combining predictive performance with interpretability.
@@ -44,10 +47,9 @@ Best Scores:
 
 ## Tech Stack
 ### Core Technologies
-- Python (pandas, numpy, scikit-learn, imbalanced-learn)  
+- Python (pandas, numpy, scikit-learn)  
 - Django (web framework)  
 - LIME (explainability)  
-- Matplotlib / Seaborn (visualizations)  
 
 ### Key Features
 - Robust preprocessing and SMOTE resampling  
